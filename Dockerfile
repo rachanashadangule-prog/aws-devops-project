@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY app.py .
 
-RUN pip install --no-cache-dir fastapi uvicorn
+RUN pip install --no-cache-dir --default-timeout=120 --retries=5 fastapi uvicorn
 
 EXPOSE 8000
 
