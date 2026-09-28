@@ -6,7 +6,7 @@ app = FastAPI(title="AWS DevOps Project")
 @app.get("/")
 def home():
     return {
-        "message": "AWS DevOps Project is running!"
+        "message": "AWS DevOps Project v2 is running!"
     }
 
 
